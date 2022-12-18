@@ -40,5 +40,17 @@ namespace File_IO_Opeerations
             text = File.ReadAllText(filePath);
             Console.WriteLine(text);
         }
+
+        public void CopyPath()
+        {
+            Console.WriteLine("\n**********Copy File Path**********");
+            string filePath = @"C:\Bridgelabz\File_IO_Operations\File_IO_Operations\File_IO_Opeerations\File_IO_Opeerations\WorldFile1.txt";
+            string copyFilePath = @"C:\Bridgelabz\File_IO_Operations\File_IO_Operations\File_IO_Opeerations\File_IO_Opeerations\WorldFile2.txt";
+            File.Copy(filePath, copyFilePath);
+            Console.WriteLine("\nCopied Successfully");
+            string copiedText;
+            copiedText = File.ReadAllText(copyFilePath);
+            Console.WriteLine(copiedText);
+        }
     }
 }
