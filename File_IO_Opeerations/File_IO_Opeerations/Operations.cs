@@ -30,7 +30,15 @@ namespace File_IO_Opeerations
             lines = File.ReadAllLines(filePath);
             Console.WriteLine(lines[0]);
             Console.WriteLine(lines[1]);
-            Console.ReadLine();
+        }
+
+        public void ReadAllText()
+        {
+            Console.WriteLine("\n**********Read All Text**********\n");
+            string filePath = @"C:\Bridgelabz\File_IO_Operations\File_IO_Operations\File_IO_Opeerations\File_IO_Opeerations\WorldFile1.txt";
+            string text;
+            text = File.ReadAllText(filePath);
+            Console.WriteLine(text);
         }
     }
 }
